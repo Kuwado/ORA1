@@ -362,6 +362,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  margin: 10px 0;
 }
 
 .pagination-item {
@@ -437,10 +438,6 @@ body {
   .footer {
     padding-left: 0;
   }
-
-  .hide-tablet {
-    display: none;
-  }
 }
 
 /* phone */
@@ -481,10 +478,19 @@ body {
     text-align: center;
     padding-bottom: var(--header-height);
   }
+
+  .hide-phone {
+    display: none !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .hide-tablet {
+    display: none !important;
+  }
 }
 
 /* Chung cho tablet và phone */
-
 @media (min-width: 992px) {
   .overlay {
     display: none !important;
