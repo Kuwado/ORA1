@@ -406,7 +406,7 @@ body {
 
 .footer-right {
   min-height: 200px;
-  background-image: url(/src/assets/images/footer.png);
+  background-image: url(../images/footer.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
