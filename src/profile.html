@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORA1 - 20215054</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="snow-fall">
+      <div class="snow-man">
+        <img src="/public/images/snow-man.png" alt="snow-man" />
+      </div>
+      <div class="snows"></div>
+    </div>
+
+    <div class="header">
+      <a class="logo-a" href="index.html">
+        <img class="logo" src="/public/images/logo.png" />
+      </a>
+
+      <div class="header-items">
+        <a href="info.html" class="header-item">Thông tin môn học</a>
+        <a href="web.html" class="header-item">Các công nghệ web</a>
+        <a href="profile.html" class="header-item active"
+          >Thông tin sinh viên</a
+        >
+      </div>
+
+      <button class="sidebar-btn" onclick="handleSidebarOpen()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="menu">
+      <a href="info.html" class="menu-item"><i class="fa-solid fa-book"></i></a>
+      <a href="web.html" class="menu-item"><i class="fa-solid fa-gear"></i></a>
+      <a href="profile.html" class="menu-item active">
+        <i class="fa-solid fa-address-card"></i
+      ></a>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>Menu</h2>
+        <button class="sidebar-close-btn" onclick="handleSidebarClose()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <a
+          class="sidebar-item"
+          href="#article-1"
+          onclick="handleSidebarClick(this)"
+          >Thông tin cơ bản</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-2"
+          onclick="handleSidebarClick(this)"
+          >Sở thích</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-3"
+          onclick="handleSidebarClick(this)"
+          >Kinh nghiệm web</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-4"
+          onclick="handleSidebarClick(this)"
+          >Dự án tham gia</a
+        >
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Thông tin cơ bản</h1>
+          <div class="article-content">
+            <div class="article-content-left">
+              <p><strong>Họ và tên: </strong>Lưu Việt Hoàn</p>
+              <p><strong>Giới tính: </strong>Nam</p>
+              <p><strong>Ngày sinh: </strong>05/07/2003</p>
+              <p><strong>Dân tộc: </strong>Kinh</p>
+              <p><strong>Quê quán: </strong>Đông Khê, Đông Sơn, Thanh Hóa</p>
+              <p>
+                <strong>Nơi ở hiện tại: </strong>Nam Từ Liêm, Trung Văn, Hà Nội
+              </p>
+              <p><strong>Số điện thoại: </strong>0372689***</p>
+              <p><strong>Email: </strong>viethoan***@gmail.com</p>
+            </div>
+            <div class="article-content-right">
+              <p><strong>Mã số sinh viên: </strong>20215054</p>
+              <p><strong>Lớp: </strong>Việt Nhật 01</p>
+              <p><strong>Trường: </strong>Đại học Bách Khoa Hà Nội</p>
+              <p><strong>Trạng thái: </strong>Đang học</p>
+              <p><strong>Trình độ: </strong>Năm thứ tư</p>
+              <p><strong>Nợ: </strong>0TC</p>
+              <p><strong>Tích lũy: </strong>108TC</p>
+              <p><strong>Mức cảnh cáo: </strong>Mức 0</p>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+            <img src="/public/images/Profile/avatar.jpg" alt="avatar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-2">
+        <div class="article-left">
+          <h1>Sở thích</h1>
+          <div class="article-content">
+            <ol>
+              <li>
+                <span>
+                  Cũng như bao người con trai khác, tôi có sở thích là chơi
+                  game. Tôi thường hay tìm những game mới lạ để thử và thể loại
+                  game tôi yêu thích là game chiến thuật như Pokemon, Yugioh,
+                  ... và game mà tôi thường hay chơi nhất là Liên Quân Mobile.
+                </span>
+                <span>
+                  Với game LQM tôi có thể tự do thể hiện kỹ năng của bản thân
+                  bên cạnh đó còn được nói chuyện, giao lưu với bạn bè qua chức
+                  năng voice chat (không toxic :-D) và cảm giác gánh những thằng
+                  bạn 100kg của mình cũng rất tuyệt vời, người ta vào game để xả
+                  stress còn tôi vào game để tăng thêm.
+                </span>
+                <span>
+                  Tuy nhiên cũng có những giây phút hài hước, khoái chí như khi
+                  ks bùa của rừng, giúp mid dọn lính, bla bla... Nếu các bạn
+                  cũng muốn có những trải nghiệm như tôi thì hãy tải ngay game
+                  về và rủ những người bạn thân quen của mình vào chơi chung
+                  nhé. Và cố gắng đừng đập máy!!!
+                </span>
+              </li>
+              <li>
+                <span>
+                  Bên cạnh chơi game, tôi cũng rất thích nghe nhạc. Tôi nghe rất
+                  nhiều loại nhạc từ Ballad, Pop, R&B, Rap và một vài bolero
+                  được ngấm từ mẹ. Tôi yêu âm nhạc vì mỗi khi đắm chìm vào nó
+                  tôi có thể chạm được tới trái tim. Trái tim của tác giả khi
+                  viết ra bài hát, trái tim của ca sỹ khi thể hiện bài hát và cả
+                  trái tim của chính tôi khi cảm nhận và hòa mình vào bài hát.
+                </span>
+                <span>
+                  Sự đắm chìm ấy giúp tôi quên đi thực tại có thể vui hoặc buồn
+                  và đi vào một thế giới khác, giúp tôi có nhiều góc nhìn hơn về
+                  cuộc sống, công việc, tình yêu. Với tôi mỗi bài nhạc là một
+                  lời tâm sự, một câu chuyện, đôi khi là một bài học được tác
+                  giả rút ra và qua mỗi bài nhạc tôi lại tự học được cho mình
+                  nhiều điều hơn.
+                </span>
+                <span>
+                  Thể loại nhạc mà tôi yêu thích nhất là Rap. Bởi vì Rap là loại
+                  nhạc có thể show ra những câu chuyện một cách chân thật nhật,
+                  là loại nhạc đời nhất và cũng là loại nhạc thật nhất.
+                </span>
+                <span>
+                  Có rất nhiều thể loại nhạc trong Rap từ Lofi chill chill giúp
+                  bạn thư giãn đầu óc, đến cả Storytelling đưa bạn vào câu
+                  chuyện của người kể chuyện một cách không hề khô khan, hay còn
+                  Trap nghe rất sướng tai và phù hợp cho các bạn quay Tóp Tóp
+                  :-D, và còn cả Drill nếu bạn muốn nghe sự gai góc và chân thật
+                  của Rap, còn nếu bạn đi bar thì làm sao thiếu được Club Banger
+                  và không thể thiếu thể loại đang hot nhất hiện nay là Melodic
+                  với autotune, nghe rất cuốn và nghiện.
+                </span>
+                <span>
+                  Và còn rất nhiều thể loại khác nữa, nếu có cơ hội hãy thử nghe
+                  dòng nhạc đang rất Trend này nhé!!!
+                </span>
+              </li>
+              <li>
+                Bên cạnh những sở thích trên, tôi vẫn có kha khá các sở thích
+                khác. Tuy nhiên tôi mỏi tay quá nên xin phép kết thúc ở đây với
+                sở thích thứ 3 là xem phim.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://lienquan.garena.vn" target="_blank">
+            <img src="/public/images/Profile/lienquan.png" alt="lienquan" />
+            <img src="/public/images/Profile/elsu.jpg" alt="elsu" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC8EB7c0E_TS4tpTQwMtv6fw"
+            target="_blank"
+          >
+            <img src="/public/images/Profile/rapper-1.jpg" alt="mck" />
+          </a>
+          <div>
+            <a href="https://www.youtube.com/@HustlangRecord" target="_blank">
+              <img src="/public/images/Profile/rapper-2.jpg" alt="robe" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=tKQ-MaeayGc"
+              target="_blank"
+            >
+              <img src="/public/images/Profile/rapper-3.jpg" alt="robe" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article" id="article-3">
+        <div class="article-left">
+          <h1>Kinh nghiệm web</h1>
+          <div class="article-content">
+            <ol>
+              <li>
+                Tôi bắt đầu học về HTML, CSS và JavaScript cơ bản khoảng nửa năm
+                trước. Tôi bắt đầu một khóa học cơ bản trên codecademy. Sau đấy
+                tôi xem video trên YouTube và bắt tay vào làm dự án đầu tiên. Và
+                khi nhận GR1, tôi được thầy giao thêm học các khóa học trên
+                freecodecamp, tôi bắt đầu học về thiết kế các phần tử giao diện,
+                cách chỉnh styles và cả cách responsive. Sau đấy tôi càng được
+                cũng cố kiến thức hơn khi học môn "Thiết kế giao diện và trải
+                nghiệm người dùng" của cô Giang. Qua môn học và project nhóm,
+                tôi càng nắm chắc kiến thức hớn
+              </li>
+              <li>
+                Sau một thời gian ngắn tìm hiều về HTML, CSS và JS cơ bản, tôi
+                bắt đầu chọn cho mình một ngôn ngữ Back-end. Ở trên trường tôi
+                được học về lập trình hướng đối tượng với Java. Thế nhưng tôi
+                không thích đi theo số đông nên tôi đã quyết định học thêm một
+                ngôn ngữ. Và sau khi tìm hiểu và lựa chọn tôi đã quyết định theo
+                PHP. Tôi bắt đầu code project full-stack theo YouTube. Và sau
+                khóa học tôi đã tạo được một trang web bán hàng đơn giản đồng
+                thời cũng cố kiến thức về database và hướng đối tượng
+              </li>
+              <li>
+                Sau khi thực hiện project trên, tôi nhận ra một vài hạn chế ở
+                giao diện, đặc biệt là trong việc render, có nhiều thứ không cần
+                thiết nhưng vẫn bị render. Và tôi bắt đầu đi tìm những giải
+                pháp. Giải pháp tốt nhất và đơn giản nhất tôi tìm thấy đó là
+                React. Và 3 tháng trước tôi đã bắt đầu tìm hiểu React. Để có thể
+                làm tốt, tôi cần học kỹ hơn về JS và cả JS nâng cao. Tôi đã học
+                qua khóa học của F8 và thực chiến với project React đầu tiên qua
+                một video 3 tiếng. Qua những điều ấy tôi đã rút ra được nhiều
+                điều và quyết định remake trang web bán hàng với sự kết hợp của
+                React và Laravel
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="article-right">
+          <div>
+            <a href="https://www.w3schools.com/html/" target="_blank">
+              <img src="/public/images/Profile/html.png" alt="html" />
+            </a>
+            <a href="https://www.w3schools.com/css/" target="_blank">
+              <img src="/public/images/Profile/css.svg" alt="css" />
+            </a>
+            <a href="https://www.w3schools.com/js/" target="_blank">
+              <img src="/public/images/Profile/js.png" alt="js" />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.php.net/" target="_blank">
+              <img src="/public/images/Profile/php.png" alt="php" />
+            </a>
+            <a href="https://laravel.com/" target="_blank">
+              <img src="/public/images/Profile/laravel.png" alt="laravel" />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://react.dev/" target="_blank">
+              <img src="/public/images/Profile/react.png" alt="react" />
+            </a>
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="hide-tablet"
+            >
+              <img src="/public/images/Profile/tailwind.png" alt="tailwind" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article" id="article-4">
+        <div class="article-left">
+          <h1>Dự án tham gia</h1>
+          <div class="article-content">
+            <div class="prj">
+              <div class="prj-header">
+                <span class="prj-name">Trang web bán hàng "KuwaShop"</span>
+                <span class="prj-time">3/2024 - 7/2024</span>
+              </div>
+              <div class="prj-body">
+                <div class="prj-members">Số lượng thành viên: Cá nhân</div>
+                <div class="prj-role">
+                  Vai trò: Lên ý tưởng, thiết kế cơ sở dữ liệu, lập trình
+                  Frontend và Backend
+                </div>
+                <div class="prj-result">
+                  Kết quả:
+                  <a href="https://github.com/Kuwado/KuwaShop" target="_blank"
+                    >https://github.com/Kuwado/KuwaShop</a
+                  >
+                </div>
+                <div class="prj-tech">
+                  Kỹ thuật sử dụng: Html, CSS, Java Script, PHP, Laravel, MySQL
+                </div>
+                <div class="prj-des">
+                  <span
+                    >Mô tả: Sản phẩm về trang web bán hàng (quần áo, giày dép,
+                    ...) hướng tới hai đối tượng sử dụng chính là người bán hàng
+                    và người mua hàng</span
+                  >
+                  <ol>
+                    <li>
+                      <span>Người bán hàng (admin): </span>
+                      <ul>
+                        <li>Thêm, sửa, xóa sản phẩm, loại sản phẩm</li>
+                        <li>Thống kê doanh thu</li>
+                        <li>Duyệt đơn đặt hàng</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Người mua hàng:</span>
+                      <ul>
+                        <li>Xem, chọn, thêm hàng vào giỏ</li>
+                        <li>Đặt hàng</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="prj">
+              <div class="prj-header">
+                <span class="prj-name">Trang web xem phim "KuwaMovie"</span>
+                <span class="prj-time">7/2024 - 7/2024</span>
+              </div>
+              <div class="prj-body">
+                <div class="prj-members">Số lượng thành viên: Cá nhân</div>
+                <div class="prj-role">
+                  Vai trò: Thiết kế và lập trình trang web
+                </div>
+                <div class="prj-result">
+                  Kết quả:
+                  <a href="https://kuwa-movie.vercel.app" target="_blank"
+                    >https://kuwa-movie.vercel.app</a
+                  >
+                </div>
+                <div class="prj-tech">
+                  Kỹ thuật sử dụng: ReactJs, Tailwind CSS
+                </div>
+                <div class="prj-des">
+                  <span
+                    >Mô tả: Xây dựng Front-end của trang web xem phim. Người
+                    dùng có thể:
+                  </span>
+                  <ol>
+                    <li>Xem danh sách phim</li>
+                    <li>Xem chi tiết phim</li>
+                    <li>Chế độ sáng tối</li>
+                    <li>Có thiết kế responsive</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="prj">
+              <div class="prj-header">
+                <span class="prj-name"
+                  >Ứng dụng đặt hàng xuất nhập khẩu "KuwaOrder"</span
+                >
+                <span class="prj-time">4/2024 - 5/2024</span>
+              </div>
+              <div class="prj-body">
+                <div class="prj-members">Số lượng thành viên: 5 người</div>
+                <div class="prj-role">
+                  Vai trò: Nhóm trưởng, thiết kế khung giao diện, thiết kế
+                  database, code chức năng đặt hàng của bộ phận bán hàng và chức
+                  năng tạo đơn hàng của bộ phận đặt hàng
+                </div>
+                <div class="prj-result">
+                  Kết quả:
+                  <a
+                    href="https://github.com/Kuwado/2023.2-147730-02/tree/main/Final-Project"
+                    target="_blank"
+                    >https://github.com/Kuwado/2023.2-147730-02/tree/main/Final-Project</a
+                  >
+                </div>
+                <div class="prj-tech">
+                  Kỹ thuật sử dụng: JavaFX, Java, MySQL, Junit5
+                </div>
+                <div class="prj-des">
+                  <span
+                    >Mô tả: Sản phẩm về ứng dụng đặt hàng xuất khẩu với 4 đối
+                    tượng người dùng chính là bộ phận bán hàng, bộ phận đặt
+                    hàng, bộ phận kho và các sites nhập khẩu</span
+                  >
+                  <ol>
+                    <li>
+                      <span>Bộ phận bán hàng:</span>
+                      <ul>
+                        <li>Tạo các đơn đặt hàng gửi đến bộ phận đặt hàng</li>
+                        <li>Quản lý thông tin sản phẩm</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Bộ phận đặt hàng:</span>
+                      <ul>
+                        <li>Tạo các đơn mua hàng gửi đến các site nhập khẩu</li>
+                        <li>Xử lý các đơn hủy</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Bộ phận kho:</span>
+                      <ul>
+                        <li>
+                          Nhập số lượng sản phẩm vào kho, quản lý sản phẩm
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Sites nhập khẩu:</span>
+                      <ul>
+                        <li>Quản lý thông tin site</li>
+                        <li>Duyệt đơn mua hàng</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <div>
+            <a href="https://github.com/Kuwado/KuwaShop" target="_blank">
+              <img src="/public/images/Profile/prj1_1.png" alt="avatar" />
+            </a>
+            <a href="https://github.com/Kuwado/KuwaShop" target="_blank">
+              <img src="/public/images/Profile/prj1_2.png" alt="avatar" />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://kuwa-movie.vercel.app" target="_blank">
+              <img src="/public/images/Profile/prj2_1.png" alt="avatar" />
+            </a>
+            <a href="https://kuwa-movie.vercel.app" target="_blank">
+              <img src="/public/images/Profile/prj2_2.png" alt="avatar" />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://github.com/Kuwado/KuwaOrder" target="_blank">
+              <img src="/public/images/Profile/prj3_1.png" alt="avatar" />
+            </a>
+            <a href="https://github.com/Kuwado/KuwaOrder" target="_blank">
+              <img src="/public/images/Profile/prj3_2.png" alt="avatar" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <div class="pagination-item active">1</div>
+        <div class="pagination-item">2</div>
+        <div class="pagination-item">3</div>
+        <div class="pagination-item">4</div>
+        <div class="pagination-item">5</div>
+        <div class="pagination-item next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <img src="/public/images/logo.png" alt="logo" />
+      </div>
+      <div class="footer-right">
+        <span>Bản quyền thuộc về Lưu Việt Hoàn - 20215054</span>
+        <span>Thông tin liên hệ: 0372689***</span>
+      </div>
+    </div>
+
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>

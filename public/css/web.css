@@ -1,0 +1,34 @@
+.article-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tech-item {
+  padding-bottom: 5px;
+}
+
+.techs,
+.summary-list {
+  margin-left: 10px;
+}
+
+.tech-name {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.tech-list {
+  margin-left: 20px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

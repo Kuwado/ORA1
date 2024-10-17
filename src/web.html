@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORA1 - 20215054</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/web.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="snow-fall">
+      <div class="snow-man">
+        <img src="/public/images/snow-man.png" alt="snow-man" />
+      </div>
+      <div class="snows"></div>
+    </div>
+
+    <div class="header">
+      <a class="logo-a" href="index.html">
+        <img class="logo" src="/public/images/logo.png" />
+      </a>
+
+      <div class="header-items">
+        <a href="info.html" class="header-item">Thông tin môn học</a>
+        <a href="web.html" class="header-item active">Các công nghệ web</a>
+        <a href="profile.html" class="header-item">Thông tin sinh viên</a>
+      </div>
+
+      <button class="sidebar-btn" onclick="handleSidebarOpen()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="menu">
+      <a href="info.html" class="menu-item"><i class="fa-solid fa-book"></i></a>
+      <a href="web.html" class="menu-item active"
+        ><i class="fa-solid fa-gear"></i
+      ></a>
+      <a href="profile.html" class="menu-item">
+        <i class="fa-solid fa-address-card"></i
+      ></a>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>Menu</h2>
+        <button class="sidebar-close-btn" onclick="handleSidebarClose()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <a
+          class="sidebar-item"
+          href="#article-1"
+          onclick="handleSidebarClick(this)"
+          >Front-End</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-2"
+          onclick="handleSidebarClick(this)"
+          >Back-End</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-3"
+          onclick="handleSidebarClick(this)"
+          >Full-Stack</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-4"
+          onclick="handleSidebarClick(this)"
+          >Các công nghệ bổ sung khác</a
+        >
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Front-End</h1>
+          <div class="article-content">
+            <div class="concept">
+              <strong>Khái niệm: </strong>
+              <span
+                >Front-end là phần của ứng dụng Web mà người dùng có thể tương
+                tác trực tiếp. Nó bao gồm giao diện người dùng (UI), thiết kế và
+                trải nghiệm người dùng (UX). Các công nghệ trong Front-end giúp
+                tạo ra các trang Web động và phản hồi nhanh chóng.</span
+              >
+            </div>
+
+            <div class="tech-info">
+              <strong>Các công nghệ Front-end chính:</strong>
+              <ol class="techs">
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >HTML (HyperText Markup Language)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      Là ngôn ngữ đánh dấu (markup language) cơ bản để xây dựng
+                      cấu trúc của các trang Web.
+                    </li>
+                    <li>
+                      Dùng để tạo ra các thẻ (tags) như
+                      <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>,
+                      <code>&lt;a&gt;</code>, <code>&lt;form&gt;</code>, v.v.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">CSS (Cascading Style Sheets)</span>
+                  <ul class="tech-list">
+                    <li>
+                      Dùng để định dạng và bố trí các thành phần HTML, như màu
+                      sắc, phông chữ, kích thước, layout, v.v.
+                    </li>
+                    <li>
+                      Các kỹ thuật nổi bật như <strong>Flexbox</strong>,
+                      <strong>Grid</strong>, <strong>Media Queries</strong> giúp
+                      tạo ra các thiết kế đáp ứng (<em>Responsive design</em>).
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">JavaScript (JS)</span>
+                  <ul class="tech-list">
+                    <li>
+                      Là ngôn ngữ lập trình chủ yếu trong Front-end để tạo ra
+                      các tương tác động với người dùng như hiệu ứng, AJAX
+                      (Asynchronous JavaScript), và thay đổi DOM mà không làm
+                      tải lại trang.
+                    </li>
+                    <li>
+                      <span>Các thư viện JavaScript nổi bật:</span>
+                      <div class="item-list">
+                        <span
+                          >- <strong>jQuery:</strong> Thư viện đơn giản hóa thao
+                          tác với DOM.</span
+                        >
+                        <span
+                          >- <strong>React:</strong> Thư viện JavaScript mạnh mẽ
+                          để xây dựng các ứng dụng giao diện người dùng (UI)
+                          động.</span
+                        >
+                        <span
+                          >- <strong>Vue.js:</strong> Framework nhẹ, dễ học, cho
+                          phép xây dựng các ứng dụng Front-end.</span
+                        >
+                        <span
+                          >- <strong>Angular:</strong> Framework mạnh mẽ của
+                          Google để phát triển ứng dụng Front-end với cấu trúc
+                          MVVM (Model-View-ViewModel).</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">TypeScript</span>
+                  <ul class="tech-list">
+                    <li>
+                      Là một "superset" của JavaScript, cung cấp tính năng kiểm
+                      tra kiểu (type-checking) và giúp việc phát triển ứng dụng
+                      lớn trở nên dễ dàng và an toàn hơn.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">CSS Frameworks</span>
+                  <ul class="tech-list">
+                    <li>
+                      <strong>Bootstrap:</strong> Framework phổ biến giúp xây
+                      dựng giao diện web đáp ứng (responsive) với các thành phần
+                      UI sẵn có.
+                    </li>
+                    <li>
+                      <strong>Tailwind CSS:</strong> Một framework CSS
+                      utility-first, giúp tùy chỉnh giao diện nhanh chóng mà
+                      không cần viết nhiều mã CSS.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="summary">
+              <strong>Tóm tắt về Front-End: </strong>
+              <ol class="summary-list">
+                <li>
+                  <strong>Công nghệ chính:</strong> HTML, CSS, JavaScript.
+                </li>
+                <li>
+                  <strong>Frameworks/Thư viện:</strong> React, Angular, Vue.js,
+                  Bootstrap, Tailwind CSS.
+                </li>
+                <li>
+                  <strong>Mục tiêu:</strong> Tạo giao diện người dùng dễ sử
+                  dụng, tương tác động và đáp ứng.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+            <img src="/public/images/Profile/avatar.jpg" alt="avatar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Back-End</h1>
+          <div class="article-content">
+            <div class="concept">
+              <strong>Khái niệm: </strong>
+              <span>
+                Back-end là phần xử lý logic, lưu trữ dữ liệu và các hoạt động
+                máy chủ của ứng dụng Web. Các công nghệ trong Back-end giúp xây
+                dựng API, xử lý dữ liệu và lưu trữ thông tin vào cơ sở dữ
+                liệu.</span
+              >
+            </div>
+
+            <div class="tech-info">
+              <strong>Các công nghệ Back-end chính:</strong>
+              <ol class="techs">
+                <li class="tech-item">
+                  <span class="tech-name">Ngôn ngữ lập trình</span>
+                  <ul class="tech-list">
+                    <li>
+                      <strong>Node.js:</strong> Là một môi trường JavaScript
+                      chạy trên máy chủ, giúp xây dựng các ứng dụng web với
+                      JavaScript ở cả phía máy khách và máy chủ.
+                    </li>
+                    <li>
+                      <strong>PHP:</strong> Ngôn ngữ lập trình phổ biến với các
+                      hệ quản trị nội dung (CMS) như WordPress, Laravel
+                      framework.
+                    </li>
+                    <li>
+                      <strong>Python:</strong> Một ngôn ngữ lập trình dễ học và
+                      mạnh mẽ với các framework như Django và Flask.
+                    </li>
+                    <li>
+                      <strong>Ruby:</strong> Ngôn ngữ lập trình với framework
+                      Ruby on Rails cho phát triển ứng dụng web nhanh chóng.
+                    </li>
+                    <li>
+                      <strong>Java:</strong> Với framework Spring Boot, Java là
+                      một lựa chọn mạnh mẽ cho các ứng dụng web doanh nghiệp.
+                    </li>
+                    <li>
+                      <strong>C# (.NET):</strong> Ngôn ngữ phát triển ứng dụng
+                      web với framework ASP.NET của Microsoft.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">Web Frameworks</span>
+                  <ul class="tech-list">
+                    <li>
+                      <strong>Express.js:</strong> Framework cho Node.js để xây
+                      dựng các API RESTful nhanh chóng.
+                    </li>
+                    <li>
+                      <strong>Django:</strong> Framework Python mạnh mẽ giúp
+                      phát triển ứng dụng web nhanh chóng và bảo mật cao.
+                    </li>
+                    <li>
+                      <strong>Ruby on Rails:</strong> Framework Ruby giúp xây
+                      dựng các ứng dụng web với tốc độ cao và tính mở rộng.
+                    </li>
+                    <li>
+                      <strong>Spring Boot:</strong> Framework Java cho việc xây
+                      dựng các ứng dụng web doanh nghiệp với khả năng mở rộng
+                      cao.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">Cơ sở dữ liệu (Database)</span>
+                  <ul class="tech-list">
+                    <li>
+                      <span
+                        ><strong>SQL Databases</strong> (Cơ sở dữ liệu quan
+                        hệ)</span
+                      >
+                      <div class="item-list">
+                        <span
+                          >- <strong>MySQL:</strong> Cơ sở dữ liệu quan hệ mã
+                          nguồn mở, phổ biến trong các ứng dụng web.</span
+                        >
+                        <span
+                          >- <strong>PostgreSQL:</strong> Cơ sở dữ liệu quan hệ
+                          mã nguồn mở với tính năng mạnh mẽ.</span
+                        >
+                        <span
+                          >- <strong>SQLite:</strong> Cơ sở dữ liệu nhẹ, dễ
+                          triển khai.
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <span
+                        ><strong>NoSQL Databases</strong> (Cơ sở dữ liệu phi
+                        quan hệ)</span
+                      >
+                      <div class="item-list">
+                        <span
+                          >- <strong>MongoDB:</strong> Cơ sở dữ liệu NoSQL phổ
+                          biến sử dụng JSON-like documents.</span
+                        >
+                        <span
+                          >- <strong>Cassandra:</strong> Cơ sở dữ liệu phân tán
+                          NoSQL mạnh mẽ cho các ứng dụng lớn.</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >API (Giao diện lập trình ứng dụng)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      <strong>RESTful API:</strong> Kiến trúc phổ biến để giao
+                      tiếp giữa Front-end và Back-end.
+                    </li>
+                    <li>
+                      <strong>GraphQL:</strong> API query language giúp lấy dữ
+                      liệu linh hoạt hơn so với REST.
+                    </li>
+                    <li>
+                      <strong>gRPC:</strong> Giao thức cho việc truyền tải dữ
+                      liệu nhanh chóng, được sử dụng trong các ứng dụng phân
+                      tán.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="summary">
+              <strong>Tóm tắt về Front-End: </strong>
+              <ol class="summary-list">
+                <li>
+                  <strong>Công nghệ chính:</strong> Node.js, PHP, Python, Ruby,
+                  Java, C#.
+                </li>
+                <li>
+                  <strong>Frameworks/Thư viện:</strong> Express.js, Django, Ruby
+                  on Rails, Spring Boot.
+                </li>
+                <li>
+                  <strong>Cơ sở dữ liệu:</strong> MySQL, PostgreSQL, MongoDB,
+                  Cassandra.
+                </li>
+                <li>
+                  <strong>Mục tiêu:</strong> Quản lý dữ liệu, xử lý logic của
+                  ứng dụng và giao tiếp với Front-end thông qua API.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+            <img src="/public/images/Profile/avatar.jpg" alt="avatar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Full-Stack</h1>
+          <div class="article-content">
+            <div class="concept">
+              <strong>Khái niệm: </strong>
+              <span
+                >Full-stack là khái niệm chỉ những nhà phát triển có thể làm
+                việc cả ở Front-end và Back-end. Các công nghệ Full-stack cung
+                cấp toàn bộ giải pháp cho việc phát triển ứng dụng web, từ giao
+                diện người dùng đến máy chủ.</span
+              >
+            </div>
+
+            <div class="tech-info">
+              <strong>Các công nghệ Full-stack chính:</strong>
+              <ol class="techs">
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >MEAN Stack (MongoDB, Express.js, Angular, Node.js)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      Một bộ công nghệ phổ biến để xây dựng ứng dụng Web
+                      full-stack bằng JavaScript.
+                    </li>
+                    <li><strong>MongoDB:</strong> Cơ sở dữ liệu NoSQL.</li>
+                    <li><strong>Express.js:</strong> Framework cho Node.js.</li>
+                    <li><strong>Angular:</strong> Framework Front-end.</li>
+                    <li>
+                      <strong>Node.js:</strong> Môi trường runtime cho
+                      JavaScript.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >MERN Stack (MongoDB, Express.js, React, Node.js)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      Tương tự MEAN, nhưng thay Angular bằng React cho phần
+                      Front-end.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >LAMP Stack (Linux, Apache, MySQL, PHP):</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      Một trong những giải pháp Full-stack cổ điển cho việc phát
+                      triển ứng dụng web với PHP.
+                    </li>
+                    <li><strong>Apache:</strong> Máy chủ web.</li>
+                    <li><strong>MySQL:</strong> Cơ sở dữ liệu quan hệ.</li>
+                    <li><strong>PHP:</strong> Ngôn ngữ lập trình.</li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >JAMstack (JavaScript, APIs, Markup)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      Phương pháp tiếp cận phát triển web hiện đại, sử dụng các
+                      trang tĩnh và API cho các tác vụ động.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="summary">
+              <strong>Tóm tắt về Front-End: </strong>
+              <ol class="summary-list">
+                <li>
+                  <strong>Công nghệ chính:</strong> MEAN, MERN, LAMP, JAMstack.
+                </li>
+                <li>
+                  <strong>Mục tiêu:</strong> Phát triển toàn bộ ứng dụng từ
+                  Front-end đến Back-end bằng một bộ công nghệ đồng nhất.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+            <img src="/public/images/Profile/avatar.jpg" alt="avatar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Các công nghệ bổ sung khác</h1>
+          <div class="article-content">
+            <div class="tech-info">
+              <ol class="techs">
+                <li class="tech-item">
+                  <span class="tech-name">Web Security</span>
+                  <ul class="tech-list">
+                    <li>
+                      <strong>HTTPS:</strong> Đảm bảo sự an toàn cho các giao
+                      tiếp qua mạng.
+                    </li>
+                    <li>
+                      <strong>OAuth 2.0, JWT:</strong> Xác thực và ủy quyền
+                      người dùng.
+                    </li>
+                    <li>
+                      <strong>CSRF, XSS:</strong> Các kỹ thuật bảo mật trong ứng
+                      dụng web.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name">Web Hosting</span>
+                  <ul class="tech-list">
+                    <li>
+                      <strong>AWS:</strong> Cung cấp hạ tầng lưu trữ và máy chủ.
+                    </li>
+                    <li>
+                      <strong>Google Cloud:</strong> Giải pháp đám mây của
+                      Google.
+                    </li>
+                    <li>
+                      <strong>Heroku:</strong> Dịch vụ Platform-as-a-Service
+                      (PaaS) để triển khai ứng dụng.
+                    </li>
+                    <li>
+                      <strong>Netlify:</strong> Nền tảng triển khai ứng dụng web
+                      tĩnh và API.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="tech-item">
+                  <span class="tech-name"
+                    >CI/CD (Continuous Integration / Continuous
+                    Deployment)</span
+                  >
+                  <ul class="tech-list">
+                    <li>
+                      <strong>Jenkins, GitLab CI, CircleCI:</strong> Các công cụ
+                      tự động hóa quá trình tích hợp và triển khai phần mềm.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+            <img src="/public/images/Profile/avatar.jpg" alt="avatar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <div class="pagination-item active">1</div>
+        <div class="pagination-item">2</div>
+        <div class="pagination-item">3</div>
+        <div class="pagination-item">4</div>
+        <div class="pagination-item">5</div>
+        <div class="pagination-item next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <img src="/public/images/logo.png" alt="logo" />
+      </div>
+      <div class="footer-right">
+        <span>Bản quyền thuộc về Lưu Việt Hoàn - 20215054</span>
+        <span>Thông tin liên hệ: 0372689***</span>
+      </div>
+    </div>
+
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>

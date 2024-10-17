@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORA1 - 20215054</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/info.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="snow-fall">
+      <div class="snow-man">
+        <img src="/public/images/snow-man.png" alt="snow-man" />
+      </div>
+      <div class="snows"></div>
+    </div>
+
+    <div class="header">
+      <a class="logo-a" href="index.html">
+        <img class="logo" src="/public/images/logo.png" />
+      </a>
+
+      <div class="header-items">
+        <a href="info.html" class="header-item active">Thông tin môn học</a>
+        <a href="web.html" class="header-item">Các công nghệ web</a>
+        <a href="profile.html" class="header-item">Thông tin sinh viên</a>
+      </div>
+
+      <button class="sidebar-btn" onclick="handleSidebarOpen()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="menu">
+      <a href="info.html" class="menu-item active"
+        ><i class="fa-solid fa-book"></i
+      ></a>
+      <a href="web.html" class="menu-item"><i class="fa-solid fa-gear"></i></a>
+      <a href="profile.html" class="menu-item">
+        <i class="fa-solid fa-address-card"></i
+      ></a>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>Menu</h2>
+        <button class="sidebar-close-btn" onclick="handleSidebarClose()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <a
+          class="sidebar-item"
+          href="#article-1"
+          onclick="handleSidebarClick(this)"
+          >Tổng quan</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-2"
+          onclick="handleSidebarClick(this)"
+          >Mục tiêu</a
+        >
+        <a
+          class="sidebar-item"
+          href="#article-3"
+          onclick="handleSidebarClick(this)"
+          >Nội dung</a
+        >
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="article" id="article-1">
+        <div class="article-left">
+          <h1>Tổng quan</h1>
+          <div class="article-content">
+            <div class="course-name">
+              IT4409 - Công nghệ web và dịch vụ trực tuyến (Web technologies and
+              e-Services)
+            </div>
+            <div class="course-info">
+              <span>- Khối lượng (<em>Credits</em>): 3(2-2-0-6)</span>
+              <span
+                >- Học phần tiên quyết (<em>Prerequisite</em>): Không
+                (<em>None</em>)</span
+              >
+              <span
+                >- Học phần học trước (<em>Pre-courses</em>): IT3292E,
+                IT3100E</span
+              >
+              <span
+                >- Học phần song hành (
+                <em>Corequisite Courses</em>
+                ): Không (<em>None</em>)</span
+              >
+              <span
+                >- Tỷ lệ đánh giá (<em>Evaluation ratio</em>): 40% Quá trình
+                (<em>Progress</em>) + 60% Thi (<em>Final exam</em>)</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a
+            href="https://soict.daotao.ai/courses/course-v1:SoICT+IT4409+2022-1/about"
+            target="_blank"
+          >
+            <img src="/public/images/Info/course-logo.jpg" alt="course-logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-2">
+        <div class="article-left">
+          <h1>Mục tiêu</h1>
+          <div class="article-content">
+            <div class="goal-vn">
+              Học phần cung cấp các kiến thức cần thiết để xây dựng và phát
+              triển các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau
+              khi học xong học phần này, sinh viên có khả năng: có thể sử dụng
+              một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho
+              các lĩnh vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông
+              tin (Portal), hay các ứng dụng điện tử (eCommerce, eLearning,
+              eGoverment,…); nắm vững được các công nghệ web, các platform,
+              framework hiện đang thịnh hành. Ngoài ra học phần cũng cung cấp
+              cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ
+              cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án,
+              công ty về phần mềm sau này.
+            </div>
+            <div class="goal-en">
+              <span>Objectives: </span>
+              <span
+                >The course provides students with the necessary knowledge to
+                build and develop online applications and services on the web
+                environment. After completing this couse, students are able to:
+                use a programming language such as JSP, PHP to develop web
+                applications for different areas such as content management
+                system (CMS), portal, or online applications (eCommerce,
+                eLearning, eGoverment, ...); understand the popular web
+                technologies, platforms, frameworks. In addition, the course
+                also provides students with skills of teamwork and presentation,
+                and attitudes needed to work and apply the techniques in
+                software projects and companies in the future.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a
+            href="https://soict.daotao.ai/courses/course-v1:SoICT+IT4409+2022-1/about"
+            target="_blank"
+          >
+            <img src="/public/images/Info/web.png" alt="web-learning" />
+          </a>
+        </div>
+      </div>
+
+      <div class="article" id="article-3">
+        <div class="article-left">
+          <h1>Nội dung</h1>
+          <div class="article-content">
+            <div class="course-content-vn">
+              Internet, web, kiến trúc ứng dụng web, HTML, CSS, Javascript, PHP,
+              JSP, Ajax, DOM, XML, SOA, An toàn bảo mật web, v.v.
+            </div>
+            <div class="course-content-en">
+              <span>Contents: </span>
+              <span
+                >Internet, web, architecture of web application, HTML, CSS,
+                Javascript, PHP, JSP, Ajax, DOM, XML, SOA, website security,
+                etc.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="article-right">
+          <a
+            href="https://soict.daotao.ai/courses/course-v1:SoICT+IT4409+2022-1/about"
+            target="_blank"
+          >
+            <img src="/public/images/Info/web-2.jpg" alt="react" />
+          </a>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <div class="pagination-item active">1</div>
+        <div class="pagination-item">2</div>
+        <div class="pagination-item">3</div>
+        <div class="pagination-item">4</div>
+        <div class="pagination-item">5</div>
+        <div class="pagination-item next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <img src="/public/images/logo.png" alt="logo" />
+      </div>
+      <div class="footer-right">
+        <span>Bản quyền thuộc về Lưu Việt Hoàn - 20215054</span>
+        <span>Thông tin liên hệ: 0372689***</span>
+      </div>
+    </div>
+
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>

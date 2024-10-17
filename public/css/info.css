@@ -1,0 +1,36 @@
+.article-content {
+  flex-direction: column;
+}
+
+#article-1 {
+  .course-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .course-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}
+
+#article-2 {
+  .goal-en {
+    font-style: italic;
+  }
+
+  .goal-en span:last-child {
+    font-weight: bold;
+  }
+}
+
+#article-3 {
+  .course-content-en {
+    font-style: italic;
+  }
+
+  .course-content-en span:last-child {
+    font-weight: bold;
+  }
+}
