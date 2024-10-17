@@ -1,0 +1,30 @@
+.article-content {
+  flex-direction: column;
+}
+
+a {
+  color: var(--secondary);
+}
+
+.seminar-list > li,
+.company-list > li {
+  padding-bottom: 15px;
+}
+
+.seminar-name,
+.company-name {
+  font-size: calc(var(--font-size) + 2px);
+  font-weight: bolder;
+}
+
+.seminar-detail,
+.company-detail {
+  margin-left: 20px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 5px;
+}

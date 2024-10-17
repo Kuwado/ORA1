@@ -50,21 +50,21 @@ const snows = ['<i class="fa-solid fa-snowflake"></i>', ""];
 const blurs = ["0", "5px"];
 var windowWidth = window.screen.width;
 var windowHeight = window.screen.height;
-const count = 200;
+const count = 300;
 
 const createSnows = () => {
   for (var i = 0; i < count; i++) {
     const left = Math.floor(Math.random() * (windowWidth + 100));
-    const top = Math.floor(Math.random() * windowHeight);
+    const top = Math.floor(Math.random() * 100);
     const snowIndex = Math.floor(Math.random() * 2);
     const blurIndex = Math.floor(Math.random() * 2);
-    const time = Math.floor(Math.random() * 8 + 5);
+    const time = Math.floor(Math.random() * 10 + 8);
 
     const div = document.createElement("div");
     div.innerHTML = snows[snowIndex];
     // div.style.top = "-30px";
     div.style.left = left + "px";
-    div.style.top = -top + "px";
+    div.style.top = -top + "vh";
     div.style.position = "fixed";
     div.style.filter = "blur(" + blurs[blurIndex] + ")";
     div.style.zIndex = "100";
@@ -91,12 +91,15 @@ const createSnows = () => {
 };
 
 const deleteSnows = () => {
-  snowsElements.forEach((snow) => {
-    snow.style.animationIterationCount = "1";
-    snow.addEventListener("animationend", () => {
-      snow.remove();
-    });
-  });
+  // snowsElements.forEach((snow) => {
+  //   snow.style.animationIterationCount = "1";
+  //   setTimeout(() => {
+  //     snow.addEventListener("animationend", () => {
+  //       snow.remove();
+  //     });
+  //   }, 0);
+  // });
+  snowsContainer.innerHTML = "";
 
   const currentLeft = window.getComputedStyle(snowMan).left;
   snowMan.style.setProperty("--snowman-left", currentLeft);
