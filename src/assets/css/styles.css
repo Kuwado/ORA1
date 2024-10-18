@@ -506,6 +506,11 @@ body {
     display: flex;
   }
 
+  .article,
+  .article-list {
+    gap: 15px;
+  }
+
   .article-content {
     flex-direction: column;
   }
