@@ -1,142 +1,146 @@
-.article li {
-  padding-bottom: 5px;
+.content-list > li {
+  font-size: var(--font-size);
 }
 
-#article-1 .article-right a {
-  width: 80%;
-  border-radius: 50%;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
-}
+#article-1 {
+  .article-left {
+    flex-direction: row;
+  }
 
-.article-content-left,
-.article-content-right {
-  width: 50%;
-  word-wrap: break-word;
-}
+  .article-right a {
+    width: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+  }
 
-#article-2 li span {
-  display: flex;
-  padding: 4px 0;
-}
-
-#article-2 .article-right > a:first-child {
-  margin-bottom: 15px;
-}
-
-#article-2 .article-right div {
-  display: flex;
-  gap: 5px;
-
-  a img {
-    aspect-ratio: 8 / 5;
+  .article-content-left,
+  .article-content-right {
+    width: 50%;
+    word-wrap: break-word;
   }
 }
 
-#article-3 .article-right {
-  gap: 15px;
+#article-2 {
+  .robe-tommy {
+    display: flex;
+    gap: 5px;
+
+    a img {
+      aspect-ratio: 8 / 5;
+    }
+  }
 }
 
-#article-3 .article-right div {
-  display: grid;
-  column-gap: 30px;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
+#article-3 {
+  .step {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  a {
+  .step a {
     width: 90%;
   }
-}
 
-#article-3 .article-right div:first-child {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#article-4 .article-content {
-  flex-direction: column;
-  gap: 30px;
-}
-
-#article-4 .prj {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.prj-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding-bottom: 10px;
-}
-
-.prj-name {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.prj-time {
-  font-weight: bold;
-}
-
-.prj-body {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 0 5px;
-
-  a {
-    color: var(--secondary);
+  .step-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.prj-des ol {
-  margin-left: 5px;
-}
+#article-4 {
+  .content-sub-list {
+    gap: 30px;
+  }
 
-.prj-des ol ul {
-  margin-left: 20px;
-}
-
-#article-4 .article-right {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-@media (min-width: 600px) and (max-width: 992px) {
-  #article-2 .article-right div {
+  .prj {
+    display: flex;
     flex-direction: column;
+    gap: 5px;
   }
 
-  #article-3 .article-right div {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 15px;
-    column-gap: 15px;
+  .prj-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .prj-name {
+    font-size: calc(var(--font-size) + 2px);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .prj-time {
+    font-weight: bold;
+    min-width: max-content;
+  }
+
+  .prj-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 5px;
 
     a {
-      width: 80%;
+      color: var(--secondary);
     }
   }
 
-  #article-3 .article-right div:first-child {
+  .prj-des ol {
+    margin-left: 5px;
+  }
+
+  .prj-des ol ul {
+    margin-left: 20px;
+  }
+}
+
+/* #article-4 .article-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+} */
+
+@media (min-width: 600px) and (max-width: 992px) {
+  #article-2 .robe-tommy {
+    flex-direction: column;
+  }
+
+  #article-3 .step {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+    column-gap: 0px;
+
+    a {
+      width: 50%;
+    }
+  }
+
+  #article-3 .step-3 {
     grid-template-columns: repeat(2, 1fr);
     a {
-      width: 80%;
+      width: 60%;
     }
   }
 }
 
 @media (max-width: 600px) {
-  .prj-header {
-    flex-direction: column;
-    align-items: flex-start;
+  #article-1 .article-content {
+    flex-direction: column-reverse;
   }
 
-  .prj-name {
-    font-size: 18px;
+  #article-1 .article-right a {
+    width: 50%;
+  }
+
+  #article-4 .prj-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
